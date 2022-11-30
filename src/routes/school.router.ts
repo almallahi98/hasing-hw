@@ -8,8 +8,8 @@ const schoolRouter=express.Router();
 
 schoolRouter.post("/addStudent",validate(studentSchema),addStudent);
 schoolRouter.get('/getstudents/:id',getStudentbyId);
-schoolRouter.get('/getcllclasses',getAllClasses);
-schoolRouter.get('/getcllclasses/:id',getAllClassesById);
+schoolRouter.get('/getallclasses',getAllClasses);
+schoolRouter.get('/getallclasses/:id',getAllClassesById);
 schoolRouter.post('/addnewclass',validate(classRoomSchema),addNewClasses);
 schoolRouter.get('/getallteachers',GetAllTeachers);
 schoolRouter.get('/getallteachers/:id',getAllTeachersById);
