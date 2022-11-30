@@ -14,8 +14,9 @@ schoolRouter.post('/addnewclass',validate(classRoomSchema),addNewClasses);
 schoolRouter.get('/getallteachers',GetAllTeachers);
 schoolRouter.get('/getallteachers/:id',getAllTeachersById);
 schoolRouter.post('/addnewteacher',validate(TeacherSchema),addNewTeacher);
-//schoolRouter.get('/getTeacherById')
 schoolRouter.get('/classroom/:id',getClassRoomById);
+
+export default schoolRouter;
 
 
 
